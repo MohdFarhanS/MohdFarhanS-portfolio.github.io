@@ -30,6 +30,7 @@ html {
   scroll-padding-top: var(--nav-h);
   -webkit-text-size-adjust: 100%;
   overflow-x: clip;
+  overscroll-behavior-y: none;
 }
 
 body {
@@ -852,9 +853,16 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     transform: translateY(-110%);
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
+    transition: transform var(--transition), opacity var(--transition), visibility 0s var(--transition);
+  }
+  .nav__links.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
     transition: transform var(--transition), opacity var(--transition);
   }
-  .nav__links.open { transform: translateY(0); opacity: 1; pointer-events: all; }
   .nav__link { display: block; padding: 14px 24px; font-size: 1rem; }
   .nav__link::after { display: none; }
   .nav__hamburger { display: flex; }
