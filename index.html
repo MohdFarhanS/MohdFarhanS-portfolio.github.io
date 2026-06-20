@@ -1,475 +1,468 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mohd. Farhan. S — Developer Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mohd. Farhan. S — Full-stack web and mobile developer from Pekanbaru, Riau. Final-year Informatics Engineering student." />
+    <meta name="author" content="Mohd. Farhan. S" />
+    <title>Mohd. Farhan. S — Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- NAVBAR -->
-  <nav id="navbar">
-    <div class="nav-inner">
-      <a href="#hero" class="nav-logo">MF<span class="accent">.</span></a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact" class="btn-nav">Contact</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-bg"></div>
-    <div class="container hero-content">
-      <p class="hero-greeting">Hi, I'm</p>
-      <h1 class="hero-name">Mohd. Farhan.<span class="accent">S</span></h1>
-      <h2 class="hero-title">
-        <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
-      </h2>
-      <p class="hero-desc">
-        Final-year Informatics Engineering student building full-stack web &amp; cross-platform mobile apps.
-        Proficient in <span class="accent">Laravel</span>, <span class="accent">PHP</span>, <span class="accent">Flutter</span>, and <span class="accent">React Native</span>.
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+    <nav class="nav" id="navbar">
+      <div class="nav__inner">
+        <a href="#hero" class="nav__logo" aria-label="Farhan — Home">MF.</a>
+        <button class="nav__hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__links" id="nav-links" role="list">
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#experience" class="nav__link">Experience</a></li>
+          <li><a href="#education" class="nav__link">Education</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
       </div>
-      <div class="hero-socials">
-        <a href="https://github.com/MohdFarhanS" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/mohd-farhan-s" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
-        </a>
-        <a href="mailto:mohdfarhansyafaat@gmail.com" aria-label="Email">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-        </a>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title">About <span class="accent">Me</span></h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            I'm a final-year <strong>Informatics Engineering</strong> student at Universitas Islam Riau with a strong passion for building
-            practical, real-world applications. I thrive at the intersection of backend logic and mobile/web frontend experience.
-          </p>
-          <p>
-            My thesis project — a nutrition &amp; production cost monitoring system — taught me to design systems that handle
-            complex business rules: role-based access, real-time calculations, and audit-safe historical data snapshots.
-          </p>
-          <p>
-            I'm actively seeking a <span class="accent">developer role</span> where I can apply my skills, keep learning fast,
-            and ship products that matter.
-          </p>
-          <div class="about-facts">
-            <div class="fact">
-              <span class="fact-num accent">4+</span>
-              <span class="fact-label">Projects Built</span>
-            </div>
-            <div class="fact">
-              <span class="fact-num accent">3.27</span>
-              <span class="fact-label">GPA / 4.00</span>
-            </div>
-            <div class="fact">
-              <span class="fact-num accent">2</span>
-              <span class="fact-label">Internships</span>
-            </div>
-          </div>
-        </div>
-        <div class="about-card">
-          <div class="code-block">
-            <div class="code-header">
-              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-              <span class="code-filename">farhan.json</span>
-            </div>
-            <pre><code>{
-  <span class="key">"name"</span>: <span class="str">"Mohd. Farhan. S"</span>,
-  <span class="key">"role"</span>: <span class="str">"Full-Stack Developer"</span>,
-  <span class="key">"location"</span>: <span class="str">"Pekanbaru, Riau"</span>,
-  <span class="key">"education"</span>: <span class="str">"Informatics Eng."</span>,
-  <span class="key">"focus"</span>: [
-    <span class="str">"Web Development"</span>,
-    <span class="str">"Mobile Apps"</span>,
-    <span class="str">"REST APIs"</span>
-  ],
-  <span class="key">"available"</span>: <span class="bool">true</span>
-}</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <main id="main-content">
 
-  <!-- SKILLS -->
-  <section id="skills" class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
-      <div class="skills-grid">
-        <div class="skill-category reveal">
-          <div class="skill-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25z"/></svg>
-          </div>
-          <h3>Languages</h3>
-          <div class="skill-tags">
-            <span>PHP</span><span>JavaScript</span><span>Dart</span><span>HTML</span><span>CSS</span>
-          </div>
-        </div>
-        <div class="skill-category reveal">
-          <div class="skill-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 0 0 3 3h4.5a3 3 0 0 0 3-3m-13.5 0V9a3 3 0 0 1 3-3h10.5a3 3 0 0 1 3 3v5.25m-4.5 0V9a1.5 1.5 0 0 0-3 0v5.25"/></svg>
-          </div>
-          <h3>Back-End & DB</h3>
-          <div class="skill-tags">
-            <span>Laravel</span><span>MySQL</span><span>REST API</span><span>MVC</span><span>RBAC</span>
-          </div>
-        </div>
-        <div class="skill-category reveal">
-          <div class="skill-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18h3"/></svg>
-          </div>
-          <h3>Mobile Dev</h3>
-          <div class="skill-tags">
-            <span>Flutter</span><span>React Native</span><span>Expo</span><span>Dart</span>
-          </div>
-        </div>
-        <div class="skill-category reveal">
-          <div class="skill-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0H3"/></svg>
-          </div>
-          <h3>Front-End</h3>
-          <div class="skill-tags">
-            <span>Bootstrap</span><span>Chart.js</span><span>Responsive UI</span><span>AJAX</span>
-          </div>
-        </div>
-        <div class="skill-category reveal">
-          <div class="skill-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/></svg>
-          </div>
-          <h3>Tools</h3>
-          <div class="skill-tags">
-            <span>Git</span><span>GitHub</span><span>VS Code</span><span>Postman</span>
-          </div>
-        </div>
-        <div class="skill-category reveal">
-          <div class="skill-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605"/></svg>
-          </div>
-          <h3>Concepts</h3>
-          <div class="skill-tags">
-            <span>MVC Architecture</span><span>Database Design</span><span>API Design</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
-      <div class="projects-grid">
-
-        <!-- Project 1 -->
-        <div class="project-card featured reveal">
-          <div class="project-badge">Thesis Project</div>
-          <div class="project-header">
-            <div class="project-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125z"/></svg>
-            </div>
-            <h3>Dashboard SPPG</h3>
-          </div>
-          <p class="project-desc">
-            Full-stack nutrition &amp; production cost monitoring system for Indonesia's Free Nutritious Meal (MBG) program.
-            Tracks daily menu nutrition and cost efficiency in real time with role-based access for 4 user types.
-          </p>
-          <ul class="project-highlights">
-            <li>Role-based access control (Superadmin, SPPG Head, Nutritionist, Accountant)</li>
-            <li>Nutrition simulation engine — 8 nutrients vs RDA across 12 target groups</li>
-            <li>Time-based ingredient pricing snapshot system for historical accuracy</li>
-            <li>845+ TKPI food composition records; Excel &amp; PDF export</li>
-          </ul>
-          <div class="project-tech">
-            <span>Laravel</span><span>PHP</span><span>MySQL</span><span>REST API</span><span>AJAX</span><span>Chart.js</span>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card reveal">
-          <div class="project-header">
-            <div class="project-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007z"/></svg>
-            </div>
-            <h3>DishOnClick</h3>
-          </div>
-          <p class="project-subtitle">Food &amp; Beverage Ordering App</p>
-          <p class="project-desc">
-            Cross-platform mobile ordering app with a complete user flow: registration, OTP verification, product browsing,
-            order customization (cup size, sugar level), and order history.
-          </p>
-          <ul class="project-highlights">
-            <li>Cross-platform iOS &amp; Android with React Native / Expo</li>
-            <li>AsyncStorage for persistent user data and favorites</li>
-            <li>Cash-payment simulation with quantity management</li>
-          </ul>
-          <div class="project-tech">
-            <span>React Native</span><span>Expo</span><span>JavaScript</span><span>AsyncStorage</span>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card reveal">
-          <div class="project-header">
-            <div class="project-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18h3"/></svg>
-            </div>
-            <h3>Flutter E-commerce App</h3>
-          </div>
-          <p class="project-subtitle">Multi-Page Flutter App</p>
-          <p class="project-desc">
-            Multi-page Flutter app with secure authentication, persistent sessions, dynamic product listings, and a full Add-to-Cart flow built with reusable custom widgets.
-          </p>
-          <ul class="project-highlights">
-            <li>Secure login, registration, password reset &amp; profile management</li>
-            <li>Dynamic product listings &amp; detail pages</li>
-            <li>Reusable custom widgets with a cohesive theme</li>
-          </ul>
-          <div class="project-tech">
-            <span>Flutter</span><span>Dart</span>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="project-card reveal">
-          <div class="project-header">
-            <div class="project-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
-            </div>
-            <h3>Flutter To-Do App</h3>
-          </div>
-          <p class="project-subtitle">Task Management Application</p>
-          <p class="project-desc">
-            Clean task management app supporting add, edit, complete, and delete operations with due dates. Structured with modular, maintainable architecture.
-          </p>
-          <ul class="project-highlights">
-            <li>Full CRUD task management with due date tracking</li>
-            <li>Clean modular architecture</li>
-          </ul>
-          <div class="project-tech">
-            <span>Flutter</span><span>Dart</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">Work <span class="accent">Experience</span></h2>
-      <div class="timeline">
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Web Developer Intern</h3>
-                <p class="timeline-company">Diskominfo Riau Province</p>
-                <p class="timeline-loc">Department of Communication &amp; Informatics · Pekanbaru, Riau</p>
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__top">
+              <div class="hero__intro">
+                <p class="hero__eyebrow reveal">Informatics Engineering &middot; Universitas Islam Riau</p>
+                <h1 class="hero__name reveal">Farhan.</h1>
+                <p class="hero__tagline reveal">Final-year student. Ships production-grade code<br>from Pekanbaru &mdash; full-stack web &amp; mobile.</p>
+                <div class="hero__ctas reveal">
+                  <a href="#projects" class="btn btn--primary">See my work</a>
+                  <a href="#contact" class="btn btn--ghost">Get in touch</a>
+                </div>
+                <p class="hero__status reveal">
+                  <span class="hero__status-dot" aria-hidden="true"></span>
+                  Open to internship &amp; full-time roles &middot; Pekanbaru, Riau
+                </p>
               </div>
-              <span class="timeline-date">Jul 2025 – Aug 2026</span>
-            </div>
-            <ul class="timeline-bullets">
-              <li>Collaborated with a team of interns to build <strong>"Master-Web"</strong>, a reusable Laravel-based web application serving as a foundational starter template for the department's future web projects.</li>
-              <li>Developed core modules: authentication, user &amp; role management, base page layouts, and starter CRUD functionality.</li>
-              <li>Applied clean, modular code structure so the template could be easily extended by the internal team.</li>
-            </ul>
-            <div class="project-tech">
-              <span>Laravel</span><span>PHP</span><span>MySQL</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Media Staff</h3>
-                <p class="timeline-company">IQ PRIMATECH</p>
-                <p class="timeline-loc">Computer Science Study Club · Pekanbaru, Riau</p>
+              <div class="profile-photo profile-photo--hero reveal">
+                <img src="images/profile/farhan.png" alt="Mohd. Farhan. S" loading="lazy"
+                     onerror="this.parentElement.classList.add('no-image')">
+                <div class="profile-photo__placeholder" aria-hidden="true">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+                </div>
               </div>
-              <span class="timeline-date">Sep 2024 – Aug 2025</span>
             </div>
-            <ul class="timeline-bullets">
-              <li>Designed and published social media content for Web Development classes, increasing community engagement by approximately <strong>20%</strong>.</li>
-              <li>Helped organize workshops on <strong>Web Development, UI/UX, and Cyber Security</strong> attended by 50+ participants.</li>
-            </ul>
+            <div class="hero__social reveal">
+              <a href="https://github.com/MohdFarhanS" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                GitHub
+              </a>
+              <span aria-hidden="true">&middot;</span>
+              <a href="https://linkedin.com/in/mohd-farhan-s" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+              <span aria-hidden="true">&middot;</span>
+              <a href="mailto:mohdfarhansyafaat@gmail.com" aria-label="Send email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                Email
+              </a>
+            </div>
+            <div class="hero__scroll reveal" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </div>
           </div>
         </div>
+      </section>
 
+      <!-- ABOUT -->
+      <section class="section section--alt" id="about">
+        <div class="container">
+          <div class="about">
+            <div class="about__text reveal">
+              <h2 class="section__title">About</h2>
+              <p class="about__bio">
+                I'm Farhan, a final-year Informatics Engineering student at Universitas Islam Riau.
+                My thesis project is a full-stack monitoring system for Indonesia's national school
+                feeding program &mdash; tracking nutrition data across 845+ food records and serving
+                12 demographic groups.
+              </p>
+              <p class="about__bio">
+                Before graduating, I interned at the provincial government's tech department, where
+                I helped build a Laravel starter template their team will use for years. I build
+                things that are meant to actually work in production.
+              </p>
+              <div class="about__stats">
+                <div class="stat">
+                  <span class="stat__num">3</span>
+                  <span class="stat__label">Production apps</span>
+                </div>
+                <div class="stat">
+                  <span class="stat__num">845+</span>
+                  <span class="stat__label">Data records</span>
+                </div>
+                <div class="stat">
+                  <span class="stat__num">Oct '26</span>
+                  <span class="stat__label">Exp. Graduation</span>
+                </div>
+              </div>
+            </div>
+            <div class="about__right">
+              <div class="about__code reveal">
+                <div class="code-block" aria-label="Profile as JSON object">
+                  <div class="code-block__header">
+                    <div class="code-block__dots" aria-hidden="true">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <span class="code-block__filename">farhan.json</span>
+                  </div>
+                  <pre class="code-block__body"><code><span class="t-brace">{</span>
+  <span class="t-key">"name"</span><span class="t-p">:</span> <span class="t-str">"Mohd. Farhan. S"</span><span class="t-p">,</span>
+  <span class="t-key">"status"</span><span class="t-p">:</span> <span class="t-str">"Final year &middot; open to roles"</span><span class="t-p">,</span>
+  <span class="t-key">"location"</span><span class="t-p">:</span> <span class="t-str">"Pekanbaru, Riau"</span><span class="t-p">,</span>
+  <span class="t-key">"stack"</span><span class="t-p">:</span> <span class="t-brace">[</span>
+    <span class="t-str">"Laravel"</span><span class="t-p">,</span> <span class="t-str">"React"</span><span class="t-p">,</span>
+    <span class="t-str">"React Native"</span>
+  <span class="t-brace">]</span><span class="t-p">,</span>
+  <span class="t-key">"thesis"</span><span class="t-p">:</span> <span class="t-str">"SPPG Dashboard"</span><span class="t-p">,</span>
+  <span class="t-key">"looking_for"</span><span class="t-p">:</span> <span class="t-str">"Internship or Junior Dev role"</span>
+<span class="t-brace">}</span></code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section" id="skills">
+        <div class="container">
+          <h2 class="section__title reveal">Skills</h2>
+          <div class="skills reveal">
+            <div class="skill-row">
+              <span class="skill-row__label">Languages</span>
+              <div class="skill-row__tags">
+                <span class="tag">PHP</span><span class="tag">JavaScript</span><span class="tag">Dart</span><span class="tag">HTML</span><span class="tag">CSS</span>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-row__label">Back-end</span>
+              <div class="skill-row__tags">
+                <span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">REST API</span><span class="tag">MVC</span><span class="tag">RBAC</span><span class="tag">PHPUnit</span>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-row__label">Front-end</span>
+              <div class="skill-row__tags">
+                <span class="tag">React</span><span class="tag">Tailwind CSS</span><span class="tag">Bootstrap</span><span class="tag">Vite</span><span class="tag">Chart.js</span><span class="tag">Recharts</span>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-row__label">Mobile</span>
+              <div class="skill-row__tags">
+                <span class="tag">React Native</span><span class="tag">Flutter</span><span class="tag">Expo</span><span class="tag">AsyncStorage</span>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-row__label">Tools</span>
+              <div class="skill-row__tags">
+                <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Postman</span><span class="tag">Axios</span>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-row__label">Concepts</span>
+              <div class="skill-row__tags">
+                <span class="tag">Clean Architecture</span><span class="tag">Database Design</span><span class="tag">AJAX</span><span class="tag">Fetch API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section section--alt" id="projects">
+        <div class="container">
+          <h2 class="section__title reveal">Projects</h2>
+          <div class="projects">
+
+            <!-- Project: Dashboard SPPG -->
+            <article class="project-card reveal">
+              <div class="project-card__visual">
+                <div class="project-slider" data-project="dashboard-sppg">
+                  <div class="project-slider__track">
+                    <div class="project-slider__slide">
+                      <img src="images/projects/dashboard-sppg/01.jpg" alt="Dashboard SPPG — halaman ringkasan nutrisi dan overview data program makan gratis" loading="lazy" onerror="this.closest('.project-slider__slide').remove()">
+                    </div>
+                    <div class="project-slider__slide">
+                      <img src="images/projects/dashboard-sppg/02.jpg" alt="Dashboard SPPG — manajemen peran dan hak akses RBAC untuk 4 role pengguna" loading="lazy" onerror="this.closest('.project-slider__slide').remove()">
+                    </div>
+                    <div class="project-slider__slide">
+                      <img src="images/projects/dashboard-sppg/03.jpg" alt="Dashboard SPPG — laporan simulasi nutrisi harian dan ekspor Excel/PDF" loading="lazy" onerror="this.closest('.project-slider__slide').remove()">
+                    </div>
+                  </div>
+                  <div class="project-slider__placeholder" aria-hidden="true">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+                    <span>Screenshot coming soon hehe</span>
+                  </div>
+                  <button class="project-slider__arrow project-slider__arrow--prev" aria-label="Previous image">&#8249;</button>
+                  <button class="project-slider__arrow project-slider__arrow--next" aria-label="Next image">&#8250;</button>
+                  <div class="project-slider__dots" role="tablist"></div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__meta">
+                  <span class="project-card__period">Apr – Jun 2026</span>
+                  <span class="project-card__badge">Thesis Project</span>
+                </div>
+                <h3 class="project-card__title">Dashboard SPPG</h3>
+                <p class="project-card__desc">Indonesia's free school meal program had no way to verify if daily menus actually met nutritional targets across 12 demographic groups. I built the system that does.</p>
+                <ul class="project-card__features">
+                  <li>RBAC for 4 user roles — each with tailored dashboards and permission scopes</li>
+                  <li>Nutrition simulation engine: 8 nutrients benchmarked against RDA with automated status flags</li>
+                  <li>845+ Indonesian food-composition (TKPI) records, automated Excel/PDF exports</li>
+                </ul>
+                <div class="project-card__tags">
+                  <span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">REST API</span><span class="tag">Chart.js</span><span class="tag">Bootstrap</span>
+                </div>
+                <div class="project-card__links">
+                  <a href="https://github.com/MohdFarhanS/dashboard_sppg" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    Source code
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project: CareerFlow -->
+            <article class="project-card reveal">
+              <div class="project-card__visual">
+                <div class="project-slider" data-project="careerflow">
+                  <div class="project-slider__track">
+                    <div class="project-slider__slide">
+                      <img src="images/projects/careerflow/01.jpg" alt="CareerFlow — dashboard ringkasan status dan statistik lamaran pekerjaan" loading="lazy" onerror="this.closest('.project-slider__slide').remove()">
+                    </div>
+                    <div class="project-slider__slide">
+                      <img src="images/projects/careerflow/02.jpg" alt="CareerFlow — form pencatatan lamaran dengan status tracking per tahap interview" loading="lazy" onerror="this.closest('.project-slider__slide').remove()">
+                    </div>
+                    <div class="project-slider__slide">
+                      <img src="images/projects/careerflow/03.jpg" alt="CareerFlow — grafik Recharts tren lamaran bulanan dan breakdown status" loading="lazy" onerror="this.closest('.project-slider__slide').remove()">
+                    </div>
+                  </div>
+                  <div class="project-slider__placeholder" aria-hidden="true">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+                    <span>Screenshot coming soon hehe</span>
+                  </div>
+                  <button class="project-slider__arrow project-slider__arrow--prev" aria-label="Previous image">&#8249;</button>
+                  <button class="project-slider__arrow project-slider__arrow--next" aria-label="Next image">&#8250;</button>
+                  <div class="project-slider__dots" role="tablist"></div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__meta">
+                  <span class="project-card__period">2026</span>
+                  <span class="project-card__badge">Personal Project</span>
+                </div>
+                <h3 class="project-card__title">CareerFlow</h3>
+                <p class="project-card__desc">Job hunting across email, spreadsheets, and notes is chaos. CareerFlow is a full-stack SPA that tracks every application, interview, and document in one place.</p>
+                <ul class="project-card__features">
+                  <li>Laravel 12 REST API — 20+ endpoints across 5 modules, rate limiting, OWASP headers, safe password reset</li>
+                  <li>React 19 frontend with 9 reusable UI primitives and 6 custom data-fetching hooks</li>
+                  <li>Real-time dashboard with Recharts — status breakdown and monthly trend charts</li>
+                </ul>
+                <div class="project-card__tags">
+                  <span class="tag">Laravel 12</span><span class="tag">React 19</span><span class="tag">Sanctum</span><span class="tag">Tailwind</span><span class="tag">Recharts</span><span class="tag">Zod</span>
+                </div>
+                <div class="project-card__links">
+                  <a href="https://github.com/MohdFarhanS/careerflow-backend" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    Backend
+                  </a>
+                  <a href="https://github.com/MohdFarhanS/careerflow-frontend" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    Frontend
+                  </a>
+                  <a href="https://www.careerflow.web.id/" target="_blank" rel="noopener noreferrer" class="project-link project-link--live">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    Live site
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project: DishOnClick -->
+            <article class="project-card reveal">
+              <div class="project-card__visual">
+                <div class="project-slider" data-project="dishonclick">
+                  <div class="project-slider__track">
+                    <div class="project-slider__slide">
+                      <img src="images/projects/dishonclick/01.jpg" alt="DishOnClick — halaman utama produk minuman dan fitur pencarian dinamis" loading="lazy" onerror="this.closest('.project-slider__slide').remove()">
+                    </div>
+                    <div class="project-slider__slide">
+                      <img src="images/projects/dishonclick/02.jpg" alt="DishOnClick — kustomisasi pesanan ukuran cup dan kadar gula dengan quantity control" loading="lazy" onerror="this.closest('.project-slider__slide').remove()">
+                    </div>
+                    <div class="project-slider__slide">
+                      <img src="images/projects/dishonclick/03.jpg" alt="DishOnClick — riwayat pesanan dan detail transaksi tersimpan via AsyncStorage" loading="lazy" onerror="this.closest('.project-slider__slide').remove()">
+                    </div>
+                  </div>
+                  <div class="project-slider__placeholder" aria-hidden="true">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+                    <span>Screenshot coming soon hehe</span>
+                  </div>
+                  <button class="project-slider__arrow project-slider__arrow--prev" aria-label="Previous image">&#8249;</button>
+                  <button class="project-slider__arrow project-slider__arrow--next" aria-label="Next image">&#8250;</button>
+                  <div class="project-slider__dots" role="tablist"></div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__meta">
+                  <span class="project-card__period">2024</span>
+                  <span class="project-card__badge">Personal Project</span>
+                </div>
+                <h3 class="project-card__title">DishOnClick</h3>
+                <p class="project-card__desc">A cross-platform mobile ordering app with a complete user flow — registration, OTP verification, product browsing, order customization, and order history.</p>
+                <ul class="project-card__features">
+                  <li>Runs natively on iOS and Android via React Native + Expo</li>
+                  <li>Dynamic search, cup-size and sugar-level customization, quantity management</li>
+                  <li>Modular reusable component library; AsyncStorage for local persistence</li>
+                </ul>
+                <div class="project-card__tags">
+                  <span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">JavaScript</span><span class="tag">AsyncStorage</span>
+                </div>
+                <div class="project-card__links">
+                  <a href="https://github.com/MohdFarhanS/DishOnClick-App-FrontEnd" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    Source code
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!--
+              FUTURE PROJECTS — uncomment to add:
+
+              Flutter E-commerce App
+              Stack: Flutter, Dart
+              Features: Secure auth, product listings, profile management, reusable custom widgets
+              GitHub: [add link]
+
+              Flutter To-Do App
+              Stack: Flutter, Dart
+              Features: Full CRUD, due date tracking, modular architecture
+              GitHub: [add link]
+            -->
+
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="section" id="experience">
+        <div class="container">
+          <h2 class="section__title reveal">Experience</h2>
+          <div class="timeline">
+            <article class="timeline__item reveal">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <div class="timeline__header">
+                  <div>
+                    <h3 class="timeline__role">Web Developer Intern</h3>
+                    <p class="timeline__org">Diskominfo Riau Province <span class="timeline__location">&middot; Pekanbaru, Riau</span></p>
+                  </div>
+                  <span class="timeline__period">Jul 2025 – Aug 2026</span>
+                </div>
+                <ul class="timeline__bullets">
+                  <li>Co-built "Master-Web" — a reusable Laravel starter template now adopted as the foundation for all new web projects in the department</li>
+                  <li>Delivered core modules: auth system, user &amp; role management, base layouts, and CRUD — cutting new-project setup time for the internal team</li>
+                  <li>Applied clean MVC architecture and modular code structure under staff supervision, ensuring the codebase stays maintainable for future devs</li>
+                </ul>
+                <div class="timeline__tags">
+                  <span class="tag tag--sm">Laravel</span><span class="tag tag--sm">PHP</span><span class="tag tag--sm">MySQL</span><span class="tag tag--sm">MVC</span>
+                </div>
+              </div>
+            </article>
+            <article class="timeline__item reveal">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <div class="timeline__header">
+                  <div>
+                    <h3 class="timeline__role">Media Staff</h3>
+                    <p class="timeline__org">IQ PRIMATECH Computer Science Club <span class="timeline__location">&middot; Pekanbaru, Riau</span></p>
+                  </div>
+                  <span class="timeline__period">Sep 2024 – Aug 2025</span>
+                </div>
+                <ul class="timeline__bullets">
+                  <li>Produced and published social media content for Web Development programming classes — grew community engagement by ~20%</li>
+                  <li>Co-organized 3+ workshops covering Web Development, UI/UX, and Cyber Security, reaching 50+ participants per session</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="section section--alt" id="education">
+        <div class="container">
+          <h2 class="section__title reveal">Education</h2>
+          <div class="education">
+            <article class="edu-item reveal">
+              <div class="edu-item__left">
+                <h3 class="edu-item__degree">Bachelor of Information Technology (S.T)</h3>
+                <p class="edu-item__school">Universitas Islam Riau</p>
+                <p class="edu-item__detail">Informatics Engineering &middot; GPA 3.27 / 4.00</p>
+              </div>
+              <span class="edu-item__period">Sep 2022 – Oct 2026</span>
+            </article>
+            <article class="edu-item reveal">
+              <div class="edu-item__left">
+                <h3 class="edu-item__degree">Senior High School (IPA / Science Track)</h3>
+                <p class="edu-item__school">SMA Muhammadiyah 1 Pekanbaru</p>
+              </div>
+              <span class="edu-item__period">Feb 2018 – Jun 2021</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="contact reveal">
+            <h2 class="section__title">Contact</h2>
+            <p class="contact__statement">I'm looking for an internship or full-time role where I can keep shipping things like this. If you're building something interesting, reach out.</p>
+            <div class="contact__channels">
+              <a href="mailto:mohdfarhansyafaat@gmail.com" class="contact__link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                mohdfarhansyafaat@gmail.com
+              </a>
+              <a href="https://github.com/MohdFarhanS" target="_blank" rel="noopener noreferrer" class="contact__link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                github.com/MohdFarhanS
+              </a>
+              <a href="https://linkedin.com/in/mohd-farhan-s" target="_blank" rel="noopener noreferrer" class="contact__link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                linkedin.com/in/mohd-farhan-s
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__text">Designed &amp; built by Farhan &middot; Pekanbaru, Riau &middot; &copy; 2026</p>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- EDUCATION -->
-  <section id="education" class="section">
-    <div class="container">
-      <h2 class="section-title">Edu<span class="accent">cation</span></h2>
-      <div class="edu-grid">
-        <div class="edu-card reveal">
-          <div class="edu-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 3.741-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"/></svg>
-          </div>
-          <div class="edu-body">
-            <h3>Universitas Islam Riau</h3>
-            <p class="edu-degree">Bachelor of Information Technology</p>
-            <p class="edu-meta">Pekanbaru, Riau, Indonesia</p>
-            <div class="edu-footer">
-              <span class="edu-date">Sep 2022 – Oct 2026 (Expected)</span>
-              <span class="edu-gpa accent">GPA: 3.27 / 4.00</span>
-            </div>
-          </div>
-        </div>
-        <div class="edu-card reveal">
-          <div class="edu-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg>
-          </div>
-          <div class="edu-body">
-            <h3>SMA Muhammadiyah 1 Pekanbaru</h3>
-            <p class="edu-degree">Senior High School</p>
-            <p class="edu-meta">Pekanbaru, Riau, Indonesia</p>
-            <div class="edu-footer">
-              <span class="edu-date">Feb 2018 – Jun 2021</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Certificate -->
-      <div class="cert-section reveal">
-        <h3 class="cert-title">Certificate</h3>
-        <div class="cert-card">
-          <div class="cert-icon accent">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12z"/></svg>
-          </div>
-          <div>
-            <p class="cert-name">Dart — Start Programming with Dart</p>
-            <p class="cert-issuer">Dicoding</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
-      <p class="contact-intro">
-        I'm currently open to new opportunities. Whether you have a project in mind or just want to say hi — my inbox is always open.
-      </p>
-      <div class="contact-grid">
-        <div class="contact-info reveal">
-          <div class="contact-item">
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
-            </div>
-            <div>
-              <p class="contact-label">Email</p>
-              <a href="mailto:mohdfarhansyafaat@gmail.com" class="contact-value">mohdfarhansyafaat@gmail.com</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25z"/></svg>
-            </div>
-            <div>
-              <p class="contact-label">Phone / WhatsApp</p>
-              <a href="tel:+6281372681011" class="contact-value">+62 813-7268-1011</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0z"/></svg>
-            </div>
-            <div>
-              <p class="contact-label">Location</p>
-              <p class="contact-value">Pekanbaru, Riau, Indonesia</p>
-            </div>
-          </div>
-          <div class="contact-socials">
-            <a href="https://github.com/MohdFarhanS" target="_blank" rel="noopener" class="social-btn">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/mohd-farhan-s" target="_blank" rel="noopener" class="social-btn">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
-              LinkedIn
-            </a>
-          </div>
-        </div>
-
-        <form class="contact-form reveal" id="contactForm">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">
-            Send Message
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 2 11 13M22 2 15 22l-4-9-9-4 20-7z"/></svg>
-          </button>
-          <p class="form-note" id="formNote"></p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container footer-inner">
-      <p>Designed &amp; Built by <span class="accent">Mohd. Farhan. S</span></p>
-      <p class="footer-sub">© 2026 · Pekanbaru, Riau, Indonesia</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
