@@ -248,7 +248,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .hero__status {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
   font-size: 0.875rem;
   color: var(--text-muted);
@@ -258,6 +258,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   flex-shrink: 0;
   width: 8px;
   height: 8px;
+  margin-top: 7px;
   border-radius: 50%;
   background: var(--accent);
   animation: status-pulse 2.4s ease-in-out infinite;
