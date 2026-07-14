@@ -768,6 +768,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   flex-shrink: 0;
   padding-top: 3px;
 }
+.edu-languages {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  padding-top: 20px;
+}
 
 /* ===== CONTACT ===== */
 .contact { max-width: 600px; }
