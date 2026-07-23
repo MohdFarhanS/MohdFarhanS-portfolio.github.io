@@ -147,6 +147,56 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .nav__hamburger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 .nav__hamburger:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
+.lang-switch { position: relative; }
+.lang-switch__btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 10px;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: border-color var(--transition), color var(--transition);
+}
+.lang-switch__btn:hover { border-color: var(--accent); color: var(--accent); }
+.lang-switch__btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.lang-switch__btn svg { transition: transform var(--transition); }
+.lang-switch__btn[aria-expanded="true"] svg { transform: rotate(180deg); }
+.lang-switch__list {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 132px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  padding: 4px;
+  z-index: 20;
+}
+.lang-switch__list[hidden] { display: none; }
+.lang-switch__list li {
+  padding: 8px 12px;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--text);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+.lang-switch__list li:hover,
+.lang-switch__list li:focus-visible {
+  background: var(--accent-light);
+  color: var(--accent);
+  outline: none;
+}
+.lang-switch__list li[aria-selected="true"] { color: var(--accent); font-weight: 600; }
+
 /* ===== SECTION ===== */
 .section { padding: 96px 0; }
 .section--alt { background: var(--bg-alt); }
@@ -883,6 +933,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .nav__link { display: block; padding: 14px 24px; font-size: 1rem; }
   .nav__link::after { display: none; }
   .nav__hamburger { display: flex; }
+
+  .lang-switch { display: flex; justify-content: center; padding: 10px 24px 4px; }
+  .lang-switch__list { right: auto; left: 50%; transform: translateX(-50%); }
 
   .section { padding: 64px 0; }
 
