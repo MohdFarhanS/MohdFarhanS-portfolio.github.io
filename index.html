@@ -86,7 +86,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="skip-link" data-i18n="skip.link">Skip to main content</a>
 
     <nav class="nav" id="navbar">
       <div class="nav__inner">
@@ -101,12 +101,31 @@
           <span></span><span></span><span></span>
         </button>
         <ul class="nav__links" id="nav-links" role="list">
-          <li><a href="#about" class="nav__link">About</a></li>
-          <li><a href="#skills" class="nav__link">Skills</a></li>
-          <li><a href="#projects" class="nav__link">Projects</a></li>
-          <li><a href="#experience" class="nav__link">Experience</a></li>
-          <li><a href="#education" class="nav__link">Education</a></li>
-          <li><a href="#contact" class="nav__link">Contact</a></li>
+          <li><a href="#about" class="nav__link" data-i18n="nav.about">About</a></li>
+          <li><a href="#skills" class="nav__link" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#projects" class="nav__link" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#experience" class="nav__link" data-i18n="nav.experience">Experience</a></li>
+          <li><a href="#education" class="nav__link" data-i18n="nav.education">Education</a></li>
+          <li><a href="#contact" class="nav__link" data-i18n="nav.contact">Contact</a></li>
+          <li class="lang-switch" id="lang-switch">
+            <button
+              type="button"
+              class="lang-switch__btn"
+              id="lang-switch-btn"
+              aria-haspopup="listbox"
+              aria-expanded="false"
+              aria-controls="lang-switch-list"
+              aria-label="Select language"
+            >
+              <span id="lang-switch-current">EN</span>
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+            </button>
+            <ul class="lang-switch__list" id="lang-switch-list" role="listbox" aria-label="Select language" hidden>
+              <li role="option" data-lang="en" aria-selected="true" tabindex="-1">English</li>
+              <li role="option" data-lang="ja" aria-selected="false" tabindex="-1">日本語</li>
+              <li role="option" data-lang="ko" aria-selected="false" tabindex="-1">한국어</li>
+            </ul>
+          </li>
         </ul>
       </div>
     </nav>
@@ -118,22 +137,22 @@
           <div class="hero__inner">
             <div class="hero__top">
               <div class="hero__intro">
-                <p class="hero__eyebrow reveal">
+                <p class="hero__eyebrow reveal" data-i18n="hero.eyebrow">
                   Informatics Engineering &middot; Universitas Islam Riau
                 </p>
                 <h1 class="hero__name reveal">Farhan.</h1>
-                <p class="hero__tagline reveal">
+                <p class="hero__tagline reveal" data-i18n="hero.tagline">
                   Fresh graduate. Ships full-stack apps<br />across
                   Next.js/TypeScript &amp; Laravel/PHP.
                 </p>
                 <div class="hero__ctas reveal">
-                  <a href="#projects" class="btn btn--primary">See my work</a>
-                  <a href="#contact" class="btn btn--ghost">Get in touch</a>
+                  <a href="#projects" class="btn btn--primary" data-i18n="hero.cta.work">See my work</a>
+                  <a href="#contact" class="btn btn--ghost" data-i18n="hero.cta.contact">Get in touch</a>
                 </div>
                 <p class="hero__status reveal">
                   <span class="hero__status-dot" aria-hidden="true"></span>
-                  Open to internship &amp; full-time roles &middot; Pekanbaru,
-                  Riau (open to relocation)
+                  <span data-i18n="hero.status">Open to internship &amp; full-time roles &middot; Pekanbaru,
+                  Riau (open to relocation)</span>
                 </p>
               </div>
               <div class="profile-photo profile-photo--hero reveal">
@@ -184,7 +203,7 @@
                   />
                   <path d="M9 18c-4.51 2-5-2-7-2" />
                 </svg>
-                GitHub
+                <span data-i18n="social.github">GitHub</span>
               </a>
               <span aria-hidden="true">&middot;</span>
               <a
@@ -210,7 +229,7 @@
                   <rect width="4" height="12" x="2" y="9" />
                   <circle cx="4" cy="4" r="2" />
                 </svg>
-                LinkedIn
+                <span data-i18n="social.linkedin">LinkedIn</span>
               </a>
               <span aria-hidden="true">&middot;</span>
               <a
@@ -231,7 +250,7 @@
                   <rect width="20" height="16" x="2" y="4" rx="2" />
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
-                Email
+                <span data-i18n="social.email">Email</span>
               </a>
             </div>
             <div class="hero__scroll reveal" aria-hidden="true">
@@ -257,15 +276,15 @@
         <div class="container">
           <div class="about">
             <div class="about__text reveal">
-              <h2 class="section__title">About</h2>
-              <p class="about__bio">
+              <h2 class="section__title" data-i18n="about.title">About</h2>
+              <p class="about__bio" data-i18n="about.bio1">
                 I'm Farhan, a fresh Informatics Engineering graduate at
                 Universitas Islam Riau, open to relocating for the right
                 opportunity. I build production-grade full-stack apps across two
                 ecosystems: Next.js/TypeScript for modern web applications and
                 Laravel/PHP for backend-heavy systems.
               </p>
-              <p class="about__bio">
+              <p class="about__bio" data-i18n="about.bio2">
                 My projects include a deployed news portal with a multi-role
                 CMS, real-time trending analytics, and 256 Playwright E2E tests
                 running green in CI, and a nutrition monitoring system for
@@ -277,21 +296,21 @@
               <div class="about__stats">
                 <div class="stat">
                   <span class="stat__num">3</span>
-                  <span class="stat__label"
+                  <span class="stat__label" data-i18n="about.stat1"
                     >Full-stack apps (2 in production)</span
                   >
                 </div>
                 <div class="stat">
                   <span class="stat__num">256</span>
-                  <span class="stat__label">E2E tests passing in CI</span>
+                  <span class="stat__label" data-i18n="about.stat2">E2E tests passing in CI</span>
                 </div>
                 <div class="stat">
                   <span class="stat__num">100/100</span>
-                  <span class="stat__label">Lighthouse SEO</span>
+                  <span class="stat__label" data-i18n="about.stat3">Lighthouse SEO</span>
                 </div>
                 <div class="stat">
                   <span class="stat__num">Jul 2026</span>
-                  <span class="stat__label">Fresh graduate</span>
+                  <span class="stat__label" data-i18n="about.stat4">Fresh graduate</span>
                 </div>
               </div>
             </div>
@@ -333,10 +352,10 @@
       <!-- SKILLS -->
       <section class="section" id="skills">
         <div class="container">
-          <h2 class="section__title reveal">Skills</h2>
+          <h2 class="section__title reveal" data-i18n="skills.title">Skills</h2>
           <div class="skills reveal">
             <div class="skill-row">
-              <span class="skill-row__label">Languages</span>
+              <span class="skill-row__label" data-i18n="skills.row.languages">Languages</span>
               <div class="skill-row__tags">
                 <span class="tag">TypeScript </span>
                 <span class="tag">JavaScript</span>
@@ -347,7 +366,7 @@
               </div>
             </div>
             <div class="skill-row">
-              <span class="skill-row__label">Front-end</span>
+              <span class="skill-row__label" data-i18n="skills.row.frontend">Front-end</span>
               <div class="skill-row__tags">
                 <span class="tag">React 19</span>
                 <span class="tag">Next.js 15</span>
@@ -367,7 +386,7 @@
               </div>
             </div>
             <div class="skill-row">
-              <span class="skill-row__label">Back-end</span>
+              <span class="skill-row__label" data-i18n="skills.row.backend">Back-end</span>
               <div class="skill-row__tags">
                 <span class="tag">Node.js</span>
                 <span class="tag">Laravel 12</span>
@@ -380,7 +399,7 @@
               </div>
             </div>
             <div class="skill-row">
-              <span class="skill-row__label">Database</span>
+              <span class="skill-row__label" data-i18n="skills.row.database">Database</span>
               <div class="skill-row__tags">
                 <span class="tag">PostgreSQL </span>
                 <span class="tag">MySQL</span>
@@ -390,7 +409,7 @@
               </div>
             </div>
             <div class="skill-row">
-              <span class="skill-row__label">Testing & Quality</span>
+              <span class="skill-row__label" data-i18n="skills.row.testing">Testing & Quality</span>
               <div class="skill-row__tags">
                 <span class="tag">Playwright (E2E)</span>
                 <span class="tag">PHPUnit</span>
@@ -400,7 +419,7 @@
               </div>
             </div>
             <div class="skill-row">
-              <span class="skill-row__label">Security</span>
+              <span class="skill-row__label" data-i18n="skills.row.security">Security</span>
               <div class="skill-row__tags">
                 <span class="tag">OWASP-aligned Hardening</span>
                 <span class="tag">RBAC</span>
@@ -411,7 +430,7 @@
               </div>
             </div>
             <div class="skill-row">
-              <span class="skill-row__label">Cloud & DevOps</span>
+              <span class="skill-row__label" data-i18n="skills.row.cloud">Cloud & DevOps</span>
               <div class="skill-row__tags">
                 <span class="tag">Vercel</span>
                 <span class="tag">Git</span>
@@ -423,7 +442,7 @@
               </div>
             </div>
             <div class="skill-row">
-              <span class="skill-row__label">Practices</span>
+              <span class="skill-row__label" data-i18n="skills.row.practices">Practices</span>
               <div class="skill-row__tags">
                 <span class="tag">Agile Workflow</span>
                 <span class="tag">Code Review</span>
@@ -438,7 +457,7 @@
       <!-- PROJECTS -->
       <section class="section section--alt" id="projects">
         <div class="container">
-          <h2 class="section__title reveal">Projects</h2>
+          <h2 class="section__title reveal" data-i18n="projects.title">Projects</h2>
           <div class="projects">
             <!-- Project: NewsPortal -->
             <article class="project-card reveal">
@@ -506,37 +525,37 @@
               <div class="project-card__body">
                 <div class="project-card__meta">
                   <span class="project-card__period">Jun 2026</span>
-                  <span class="project-card__badge">Personal Project</span>
+                  <span class="project-card__badge" data-i18n="project.personal">Personal Project</span>
                 </div>
                 <h3 class="project-card__title">NewsPortal</h3>
-                <p class="project-card__desc">
+                <p class="project-card__desc" data-i18n="project.newsportal.desc">
                   Indonesian news portals are often static and editor-heavy.
                   NewsPortal is a production CMS with a structured editorial
                   workflow, real-time trending, and full multi-role access,
                   built on Next.js 15 and TypeScript end to end.
                 </p>
                 <ul class="project-card__features">
-                  <li>
+                  <li data-i18n="project.newsportal.feature1">
                     Production news portal with a 4-role CMS (USER, JOURNALIST,
                     EDITOR, ADMIN) and a DRAFT → REVIEW → PUBLISHED editorial
                     workflow, enforced by Next.js middleware and Auth.js v5 JWT
                     with per-request DB revalidation
                   </li>
-                  <li>
+                  <li data-i18n="project.newsportal.feature2">
                     256 Playwright E2E tests across 11 critical areas, 100%
                     passing in a GitHub Actions CI pipeline — alongside WCAG 2.1
                     AA compliance and a 100/100 Lighthouse SEO score
                   </li>
-                  <li>
+                  <li data-i18n="project.newsportal.feature3">
                     Concurrent review actions protected by atomic TOCTOU guards
                     returning 409 Conflict instead of corrupted state
                   </li>
-                  <li>
+                  <li data-i18n="project.newsportal.feature4">
                     Hardened with dual-layer HTML sanitization, CSP/HSTS
                     headers, Redis-backed rate limiting with Sentry alerting,
                     and server-side re-verification of unsigned uploads
                   </li>
-                  <li>
+                  <li data-i18n="project.newsportal.feature5">
                     Real-time trending engine (24h view dedup, 7-day rolling
                     window) and full-text search over a normalized 9-model
                     PostgreSQL schema
@@ -578,7 +597,7 @@
                       />
                       <path d="M9 18c-4.51 2-5-2-7-2" />
                     </svg>
-                    Source code
+                    <span data-i18n="link.source">Source code</span>
                   </a>
                   <a
                     href="https://newsportal.my.id"
@@ -603,7 +622,7 @@
                       <polyline points="15 3 21 3 21 9" />
                       <line x1="10" y1="14" x2="21" y2="3" />
                     </svg>
-                    Live site
+                    <span data-i18n="link.live">Live site</span>
                   </a>
                 </div>
               </div>
@@ -667,28 +686,28 @@
               <div class="project-card__body">
                 <div class="project-card__meta">
                   <span class="project-card__period">Apr 2026</span>
-                  <span class="project-card__badge">Thesis Project</span>
+                  <span class="project-card__badge" data-i18n="project.thesis">Thesis Project</span>
                 </div>
                 <h3 class="project-card__title">Dashboard SPPG</h3>
-                <p class="project-card__desc">
+                <p class="project-card__desc" data-i18n="project.sppg.desc">
                   Indonesia's free school meal program had no way to verify if
                   daily menus actually met nutritional targets across 12
                   demographic groups. I built the system that does.
                 </p>
                 <ul class="project-card__features">
-                  <li>
+                  <li data-i18n="project.sppg.feature1">
                     RBAC for 4 user roles, each with tailored dashboards and
                     permission scopes
                   </li>
-                  <li>
+                  <li data-i18n="project.sppg.feature2">
                     Nutrition simulation engine: 8 nutrients benchmarked against
                     RDA with automated status flags
                   </li>
-                  <li>
+                  <li data-i18n="project.sppg.feature3">
                     830+ Indonesian food-composition (TKPI) records, automated
                     Excel/PDF exports
                   </li>
-                  <li>
+                  <li data-i18n="project.sppg.feature4">
                     Built 5+ REST API endpoints and a nutrition simulation
                     engine checking 8 nutrients against RDA standards, replacing
                     manual calculation entirely
@@ -724,7 +743,7 @@
                       />
                       <path d="M9 18c-4.51 2-5-2-7-2" />
                     </svg>
-                    Source code
+                    <span data-i18n="link.source">Source code</span>
                   </a>
                 </div>
               </div>
@@ -796,28 +815,28 @@
               <div class="project-card__body">
                 <div class="project-card__meta">
                   <span class="project-card__period">Jun 2026</span>
-                  <span class="project-card__badge">Personal Project</span>
+                  <span class="project-card__badge" data-i18n="project.personal">Personal Project</span>
                 </div>
                 <h3 class="project-card__title">CareerFlow</h3>
-                <p class="project-card__desc">
+                <p class="project-card__desc" data-i18n="project.careerflow.desc">
                   Job hunting across email, spreadsheets, and notes is chaos.
                   CareerFlow is a full-stack SPA that tracks every application,
                   interview, and document in one place.
                 </p>
                 <ul class="project-card__features">
-                  <li>
+                  <li data-i18n="project.careerflow.feature1">
                     Laravel 12 REST API, 20+ endpoints across 5 modules, rate
                     limiting, OWASP headers, safe password reset
                   </li>
-                  <li>
+                  <li data-i18n="project.careerflow.feature2">
                     React 19 frontend with 9 reusable UI primitives and 6 custom
                     data-fetching hooks
                   </li>
-                  <li>
+                  <li data-i18n="project.careerflow.feature3">
                     Real-time dashboard with Recharts, status breakdown and
                     monthly trend charts
                   </li>
-                  <li>
+                  <li data-i18n="project.careerflow.feature4">
                     Rate limiting (5/min auth, 60/min protected) and 4
                     OWASP-aligned security headers; dual validation via React
                     Hook Form + Zod on the client and Laravel rules on the
@@ -857,7 +876,7 @@
                       />
                       <path d="M9 18c-4.51 2-5-2-7-2" />
                     </svg>
-                    Backend
+                    <span data-i18n="link.backend">Backend</span>
                   </a>
                   <a
                     href="https://github.com/MohdFarhanS/careerflow-frontend"
@@ -881,7 +900,7 @@
                       />
                       <path d="M9 18c-4.51 2-5-2-7-2" />
                     </svg>
-                    Frontend
+                    <span data-i18n="link.frontend">Frontend</span>
                   </a>
                   <a
                     href="https://www.careerflow.web.id/"
@@ -906,7 +925,7 @@
                       <polyline points="15 3 21 3 21 9" />
                       <line x1="10" y1="14" x2="21" y2="3" />
                     </svg>
-                    Live site
+                    <span data-i18n="link.live">Live site</span>
                   </a>
                 </div>
               </div>
@@ -932,14 +951,14 @@
       <!-- EXPERIENCE -->
       <section class="section" id="experience">
         <div class="container">
-          <h2 class="section__title reveal">Experience</h2>
+          <h2 class="section__title reveal" data-i18n="experience.title">Experience</h2>
           <div class="timeline">
             <article class="timeline__item reveal">
               <div class="timeline__dot" aria-hidden="true"></div>
               <div class="timeline__content">
                 <div class="timeline__header">
                   <div>
-                    <h3 class="timeline__role">Web Developer Intern</h3>
+                    <h3 class="timeline__role" data-i18n="exp.intern.role">Web Developer Intern</h3>
                     <p class="timeline__org">
                       Diskominfo Riau Province
                       <span class="timeline__location"
@@ -950,18 +969,18 @@
                   <span class="timeline__period">Jul 2025 – Aug 2025</span>
                 </div>
                 <ul class="timeline__bullets">
-                  <li>
+                  <li data-i18n="exp.intern.bullet1">
                     Co-built Master-Web, a reusable Laravel starter template now
                     adopted as the foundation for all new web projects in the
                     department
                   </li>
-                  <li>
+                  <li data-i18n="exp.intern.bullet2">
                     Delivered core modules authentication, user & role
                     management with RBAC, base layouts, and starter CRUD on an
                     MVC architecture, cutting initial project scaffolding from
                     days to hours
                   </li>
-                  <li>
+                  <li data-i18n="exp.intern.bullet3">
                     Applied clean MVC architecture and modular code structure
                     under staff supervision, ensuring the codebase stays
                     maintainable for future devs
@@ -980,7 +999,7 @@
               <div class="timeline__content">
                 <div class="timeline__header">
                   <div>
-                    <h3 class="timeline__role">Media Staff</h3>
+                    <h3 class="timeline__role" data-i18n="exp.media.role">Media Staff</h3>
                     <p class="timeline__org">
                       IQ PRIMATECH Computer Science Club
                       <span class="timeline__location"
@@ -991,12 +1010,12 @@
                   <span class="timeline__period">Sep 2024 – Aug 2025</span>
                 </div>
                 <ul class="timeline__bullets">
-                  <li>
+                  <li data-i18n="exp.media.bullet1">
                     Produced and published social media content for Web
                     Development programming classes, grew community engagement
                     by ~20%
                   </li>
-                  <li>
+                  <li data-i18n="exp.media.bullet2">
                     Co-organized 3+ workshops covering Web Development, UI/UX,
                     and Cyber Security, reaching 50+ participants per session
                   </li>
@@ -1010,22 +1029,22 @@
       <!-- EDUCATION -->
       <section class="section section--alt" id="education">
         <div class="container">
-          <h2 class="section__title reveal">Education</h2>
+          <h2 class="section__title reveal" data-i18n="education.title">Education</h2>
           <div class="education">
             <article class="edu-item reveal">
               <div class="edu-item__left">
-                <h3 class="edu-item__degree">
+                <h3 class="edu-item__degree" data-i18n="education.degree">
                   Bachelor of Informatics Engineering (S.T)
                 </h3>
                 <p class="edu-item__school">Universitas Islam Riau</p>
-                <p class="edu-item__detail">
+                <p class="edu-item__detail" data-i18n="education.detail">
                   Informatics Engineering
                 </p>
               </div>
               <span class="edu-item__period">Sep 2022 – Jul 2026</span>
             </article>
           </div>
-          <p class="edu-languages reveal">
+          <p class="edu-languages reveal" data-i18n="education.languages">
             Languages — Indonesian (Native) &middot; English (Professional)
           </p>
         </div>
@@ -1035,8 +1054,8 @@
       <section class="section" id="contact">
         <div class="container">
           <div class="contact reveal">
-            <h2 class="section__title">Contact</h2>
-            <p class="contact__statement">
+            <h2 class="section__title" data-i18n="contact.title">Contact</h2>
+            <p class="contact__statement" data-i18n="contact.statement">
               I'm looking for an internship or full-time role where I can keep
               shipping things like this. If you're building something
               interesting, reach out.
@@ -1132,7 +1151,7 @@
                   <polyline points="7 10 12 15 17 10" />
                   <line x1="12" y1="15" x2="12" y2="3" />
                 </svg>
-                Download CV
+                <span data-i18n="contact.cv">Download CV</span>
               </a>
             </div>
           </div>
@@ -1142,7 +1161,7 @@
 
     <footer class="footer">
       <div class="container">
-        <p class="footer__text">
+        <p class="footer__text" data-i18n="footer.text">
           Designed &amp; built by Farhan &middot; Pekanbaru, Riau &middot;
           &copy; 2026
         </p>
